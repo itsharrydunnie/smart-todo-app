@@ -1,17 +1,18 @@
 "use strict";
 
+const today = new Date().toDateString();
 const todoList = [
   {
     id: 1,
-    title: "Visit grandma on my way back from work",
+    title: "HARRY DUNNIE working on this application",
     status: "pending",
-    createdAt: " ",
+    createdAt: today,
   },
   {
-    id: 2,
-    title: "pick the kids from school",
-    status: "done",
-    createdAt: " ",
+    id: undefined,
+    title: undefined,
+    status: undefined,
+    createdAt: undefined,
   },
 ];
 
@@ -90,7 +91,7 @@ addButton.addEventListener("click", function () {
 });
 
 //checkbox for completion
-console.log(checkbox.nextElementSibling.textContent);
+
 const checkComplete = function (checkbox) {
   const taskTitle = checkbox.nextElementSibling;
   const tastTitleDom = taskTitle.textContent;
@@ -124,6 +125,3 @@ const getIndex = function (title) {
     }
   }
 };
-
-const index = getIndex("Visit grandma on my way back from work");
-console.log(todoList[index]);
