@@ -3,25 +3,54 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>To Do App</title>
   </head>
   <body>
-    <header>
-      <h1>To Do App</h1>
-      <h3>Add todos</h3>
-    </header>
-    <form class="create-todo">
-      <input type="text" name="list" id="list" class="create-text" />
-      <button type="submit" class="add-task">Add</button>
-    </form>
-    <ul class="task-list">
-      <li class="list-item">
-        <input type="checkbox" name="" id="" checked="true" class="box" />
-        <span class="task-title">create first task</span>
-        <button type="button" class="editBtn">Edit</button>
-        <button type="button" class="deleteBtn">Delete</button>
-      </li>
-    </ul>
+    <div class="container">
+      <header>
+        <h1>To Do App</h1>
+        <h3>Add todos</h3>
+      </header>
+      <section>
+        <form class="create-todo">
+          <input
+            type="text"
+            name="list"
+            id="list"
+            class="create-text"
+            placeholder="what do you want to do now?"
+          />
+          <button type="submit" class="add-task">
+            <i class="fas fa-plus"></i>
+          </button>
+        </form>
+      </section>
+      <div class="status">
+        <span class="all status-btn">All</span>
+        <span class="completed status-btn">Completed</span>
+        <span class="pending status-btn">Pending</span>
+      </div>
+      <ul class="task-list">
+        <li class="list-item">
+          <input type="checkbox" name="" id="" checked="true" class="box" />
+          <span class="task-title">create first task</span>
+          <button type="button" class="editBtn">
+            <i class="fas fa-edit"></i>
+          </button>
+          <button type="button" class="deleteBtn">
+            <i class="fas fa-trash"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
   </body>
   <script src="index.js"></script>
 </html>
